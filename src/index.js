@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import Home from './pages/Home'
 import About from './pages/About'
+import Vans from './pages/Vans'
+
 
 function App() {
   return (
@@ -12,13 +14,16 @@ function App() {
     <header>
     <Link to="/">#VANLIFE</Link>
     <nav>
-      <Link to="/">Home</Link>
       <Link to="/about">About</Link>
+      <Link to="/Vans">Vans</Link>
+
     </nav>
     </header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Vans" element={<Vans />} />
+
       </Routes>
     </BrowserRouter>
   )
